@@ -1,0 +1,10 @@
+server:
+  port: 9191
+spring:
+  application:
+    name: E2EProducer
+  kafka:
+    producer:
+      bootstrap-servers: 127.0.0.1:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
